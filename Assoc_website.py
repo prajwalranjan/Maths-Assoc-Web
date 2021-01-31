@@ -20,7 +20,7 @@ def join():
 @app.route('/join/join-status',methods = ['POST', 'GET'])
 def joinstatus(): 
     if request.method == 'POST':
-        result = request.form
+        result =request.form
         return render_template("join_data.html",result = result)
  
 if __name__ =='__main__':
