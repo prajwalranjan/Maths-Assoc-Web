@@ -3,20 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" >
+    <link rel="icon" href="https://o.remove.bg/downloads/54a7dd76-cf06-48a9-8cdd-70a6516a5bc9/1592724687905-removebg-preview.png" type="image/icon type">
+    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+    <script src="./scripts/script.js"></script>
+    <title>Mathematics Association • BITS Pilani</title>
 </head>
 <body>
-    <h1>Home Page</h1><br>
-    <ul>
-        <a href="/about"><h4>
-            About Us
-        </h4></a><br>
-        <a href="/contact"><h4>
-            Contact Us
-        </h4></a><br>
-        <a href="/join"><h4>
-            Join Us
-        </h4></a><br>
-    </ul>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo-title">
+                <img class="nav-logo" src="{{url_for('static', filename='images/assoc.png')}}" alt="Assoc Logo">
+                <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
+            </div>
+            <ul class="nav-links">
+                <a><li class="links link1 active">Home</li></a>
+                <a><li class="links link2">About</li></a>
+                <a><li class="links link3">Events</li></a>
+                <a><li class="links link4">Contact Us</li></a>
+                <a><li class="links link5">Join Us</li></a>
+            </ul>
+            <div class="nav-hamburger">
+                <div class="lines line1"></div>
+                <div class="lines line2"></div>
+                <div class="lines line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main class="ba">
+      <p class="ba" style="font-size:60px; font-family:Montserrat; color:#FFFFFF; text-align:center">
+<br><br><b>
+        Mathematics Association <br>
+        <line style="color:#C0C0DB; font-size:40px">
+        Birla Institute of Technology and Science, Pilani </b> </line>
+
+        <br> <br><br>
+      </p>
+      
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="{{url_for('static', filename='images/college-logo.png')}}" alt="Assoc Logo" class="footer-logo">
+                </div>
+                <div class="footer-title-details">
+                    <h3 class="footer-title">Mathematics Association, BITS Pilani</h3>
+                    <h4 class="footer-sub-title">BITS Pilani</h4>
+                    <h4 class="footer-details">Jhunjhunu, Rajasthan-333031</h4>
+                </div>
+            </div>
+            <div class="footer-right">
+                    <div class="footer-social-links">
+                        <div class="social-link1">
+                            <a href="https://in.linkedin.com/company/math-bitspilani">
+                                <img src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn">
+                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/254/254394.svg token=exp=1612281767~hmac=2e22b8b7dd2acba38e6beec921b9f13b" alt="LinkedIn"></a> -->
+                            </a>
+                        </div>
+                        <div class="social-link2">
+                            <a href="https://www.instagram.com/maths.assoc.bits.pilani/">
+                                <img src="{{url_for('static', filename='images/instagram.png')}}" alt="Instagram">
+                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384031.svg?token=exp=1612281884~hmac=db041a3f0359bd9d0d52ade01a872331" alt="Instagram"></a> -->
+                            </a>
+                        </div>
+                        <div class="social-link3">
+                            <a href="https://www.facebook.com/maths.assoc.bits.pilani/">
+                                <img src="{{url_for('static', filename='images/facebook.png')}}" alt="Facebook">
+                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1051/1051309.svg?token=exp=1612287457~hmac=e464000ef0ca6bc045b337e365f37c3c" alt="Facebook"></a> -->
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span class="material-icons">email</span>
+                        <address>maths.assoc@pilani.bits-pilani.ac.in</address>
+                    </div>
+                    <div class="mobile">
+                        <span class="material-icons">call</span>
+                        <address>+91 82905 08760</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
