@@ -34,6 +34,16 @@ header{
   background-size: cover;
   width: 100%;
 }
+.baj{
+  margin: 0;
+  padding: 0;
+  background-image: url('join.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  opacity: 50%;
+}
 .navbar{
     display: flex;
     justify-content:space-between;
@@ -139,11 +149,15 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     line-height: 2;
 }
-
+.footer-title-details{
+    padding: 20px;
+}
 .footer-title{
     font-weight: 700;
+
 }
 .footer-sub-title{
     font-weight: 700;
@@ -206,4 +220,31 @@ footer{
     .nav-links{
         gap: 1.8rem;
     }
+}
+.button {
+  background-color: #8988BE;
+  border: none;
+  color: #FFFFFF;
+  width: 150px;
+  font-family:arial;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  .disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.baj{
+  margin: 0;
+  padding: 0;
+  background-image: url('Picture4.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
 }
