@@ -183,9 +183,8 @@ footer{
     background-color: #efefff;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
     min-height: fit-content;
-    padding: 0.5rem;
 }
 
 .footer-content{
