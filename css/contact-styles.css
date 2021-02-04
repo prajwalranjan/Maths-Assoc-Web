@@ -43,10 +43,11 @@ footer{
 
 .details-right{
     padding: 1rem;
-    /* white-space: nowrap; */
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: 0 1 50%;
     gap: 1em;
 }
