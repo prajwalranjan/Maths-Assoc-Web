@@ -4,7 +4,7 @@ import smtplib, ssl
 app = Flask(__name__)
 app.config['SECRET_KEY']= 'e4c1df590ecea9fd104c33bc39d52412'
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('Assoc_web_home.html')
 
