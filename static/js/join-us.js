@@ -1,9 +1,8 @@
-// const submitButton = document.querySelector(".button");
+const submitButton = document.querySelector(".button");
 
-// function congratulations(e){
-// 	alert("Congratulations on joining the mathematics association ");
-// }
+function congratulations(e){
+	alert("Congratulations on joining the mathematics association ");
+}
 
 
-// submitButton.addEventListener("click", congratulations);
-alert("Hello");
+submitButton.addEventListener("click", congratulations);
