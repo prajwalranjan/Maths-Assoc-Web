@@ -1,7 +1,7 @@
 const submitButton = document.querySelector(".button");
 
 function congratulations(e){
-	alert("Congratulations on joining the mathematics association ");
+	alert("Your response has been submitted");
 }
 
 
