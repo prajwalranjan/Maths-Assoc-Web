@@ -74,7 +74,7 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    padding: 0 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .form{
@@ -104,7 +104,6 @@ footer{
 }
 
 .submit-contact{
-    margin: 0 0rem;
     background-color: #f83333;
     color: rgb(255, 254, 247);
     padding: 1rem;
@@ -138,7 +137,7 @@ label span{
         min-width: fit-content;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 0rem;
+        padding: 1rem;
     }
 
     .form{
@@ -157,6 +156,6 @@ label span{
     }
 
     .submit-contact{
-        margin: 1rem 40vw;
+        margin: 0.5rem 40vw 0.5rem 40vw;
     }
 }
