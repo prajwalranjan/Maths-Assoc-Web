@@ -46,7 +46,7 @@ footer{
     white-space: nowrap;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex: 0 1 50%;
     gap: 1em;
@@ -56,6 +56,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 700;
 }
+
 
 .details > * + p{
     font-weight: 600;
