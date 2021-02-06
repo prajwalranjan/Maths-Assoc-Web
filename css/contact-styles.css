@@ -61,6 +61,12 @@ footer{
     font-weight: 600;
 }
 
+form{
+    padding: 1rem 0;
+    background: url(../images/logo1.jfif);
+    background-color: #efefff;
+    background-blend-mode:luminosity;
+}
 
 .form-heading-container{
     margin: 0 auto;
@@ -74,7 +80,6 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    padding: 1rem 0 2rem 0;
 }
 
 .form{
@@ -90,8 +95,15 @@ footer{
 
 .form label{
     text-transform: uppercase;
-    color: rgb(88, 88, 88);;
+
+    color: rgb(49, 49, 49);
+    /* color: rgb(0, 0, 0); */
 }
+
+label span{
+    font-weight: 400;
+}
+
 .form input, .form textarea{
     width: 100%;
     padding: 0.75rem;
@@ -103,11 +115,18 @@ footer{
     height: 10rem;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
 .submit-contact{
     background-color: #f83333;
     color: rgb(255, 254, 247);
     padding: 1rem;
-    width: 7rem;
+    width: 6rem;
     height: 2.5rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -126,10 +145,6 @@ footer{
     background-color:#f32525;
     font-size: 0.85rem;
     width: 7.15rem;
-}
-
-label span{
-    font-weight: 100;
 }
 
 @media screen and (min-width:830px){
@@ -153,9 +168,5 @@ label span{
         flex-grow: 1;
         max-width: 67%;
         padding: 0.1rem;
-    }
-
-    .submit-contact{
-        margin: 0.5rem 40vw 0.5rem 40vw;
     }
 }
