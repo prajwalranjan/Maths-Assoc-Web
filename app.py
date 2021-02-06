@@ -40,7 +40,7 @@ def joinstatus():
     #     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
     #         server.login(sender_email, password)
     #         server.sendmail(sender_email, receiver_email, message)
-    return render_template("Join-status.html")
+    return redirect(url_for("home"))
         
         
 if __name__ =='__main__':

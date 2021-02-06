@@ -32,10 +32,10 @@ div.transbox p {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" >
     <link rel="icon" href="https://o.remove.bg/downloads/54a7dd76-cf06-48a9-8cdd-70a6516a5bc9/1592724687905-removebg-preview.png" type="image/icon type">
-    <link rel="shortcut icon" href="../static/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <script src="../static/js/join-us.js" defer></script>
-    <script src="./scripts/script.js" defer></script>
+    <script src="../static/js/script.js" defer></script>
     <title>Mathematics Association • BITS Pilani</title>
 
 
@@ -51,7 +51,7 @@ div.transbox p {
                 <a href="/" style="color: #000000; text-decoration: none;"><li class="links link1">Home</li></a>
                 <a><li class="links link2">About</li></a>
                 <a><li class="links link3">Events</li></a>
-                <a><li class="links link4">Contact Us</li></a>
+                <a href="/contact" style="color: #000000; text-decoration: none;"><li class="links link4">Contact Us</li></a>
                 <a href="/join" style="color: #000000; text-decoration: none;"><li class="links link5 active">Join Us</li></a>
             </ul>
             <div class="nav-hamburger">
@@ -64,7 +64,7 @@ div.transbox p {
     <body class="background">
       <div class="transbox">
 
-    <form action = "https://assoc-website.herokuapp.com/join/join-status" method="POST">
+    <form action = "localhost:5000/join/join-status" method="POST">
       <div class="form" style="text-align:center; color:#000000;"><br>
         Please fill out the following form<br>
         if you are interested in joining the<br>
@@ -81,7 +81,7 @@ div.transbox p {
       <div class="overlap-text">
         <input type="text" placeholder="BITS Email" name="BITS Email" class="input-2" size="36" style="height:30pt; font-size:10pt" />
       </div><br>
-      <p><input type = "submit" value = "submit" class="button"></p> <br><br>
+      <p><input type = "submit" value = "Submit" class="button"></p> <br><br>
     </div>
   </form>
 </div>
@@ -90,7 +90,7 @@ div.transbox p {
         <div class="footer-content">
             <div class="footer-left">
                 <div class="footer-logo">
-                    <img src="{{url_for('static', filename='images/college-logo.png')}}" alt="Assoc Logo" class="footer-logo">
+                    <img src="{{url_for('static', filename='images/college.png')}}" alt="Assoc Logo" class="footer-logo">
                 </div>
                 <div class="footer-title-details">
                     <h3 class="footer-title">Mathematics Association, BITS Pilani</h3>
@@ -102,19 +102,19 @@ div.transbox p {
                     <div class="footer-social-links">
                       <div class="social-link1">
                         <a href="https://in.linkedin.com/company/math-bitspilani">
-                            <img src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkedIn">
+                            <img src="{{url_for('static', filename='images/linkedin-logo.svg')}}" alt="LinkedIn">
                         <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/254/254394.svg token=exp=1612281767~hmac=2e22b8b7dd2acba38e6beec921b9f13b" alt="LinkedIn"></a> -->
                         </a>
                     </div>
                     <div class="social-link2">
                         <a href="https://www.instagram.com/maths.assoc.bits.pilani/">
-                            <img src="{{url_for('static', filename='images/instagram.png')}}" alt="Instagram">
+                            <img src="{{url_for('static', filename='images/insta-logo.svg')}}" alt="Instagram">
                         <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384031.svg?token=exp=1612281884~hmac=db041a3f0359bd9d0d52ade01a872331" alt="Instagram"></a> -->
                         </a>
                     </div>
                     <div class="social-link3">
                         <a href="https://www.facebook.com/maths.assoc.bits.pilani/">
-                            <img src="{{url_for('static', filename='images/facebook.png')}}" alt="Facebook">
+                            <img src="{{url_for('static', filename='images/fb-logo.svg')}}" alt="Facebook">
                         <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1051/1051309.svg?token=exp=1612287457~hmac=e464000ef0ca6bc045b337e365f37c3c" alt="Facebook"></a> -->
                         </a>
                     </div>
