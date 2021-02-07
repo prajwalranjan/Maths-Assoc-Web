@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+.background {
+  background: url('/static/images/Picture4.png') no-repeat fixed;
+  border: 0px solid black;
+  background-size: cover;
+  width: 100%;
+}
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,11 +31,11 @@
                 <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
             </div>
             <ul class="nav-links">
-                <a><li class="links link1 active">Home</li></a>
+                <a href="/" style="color: #000000; text-decoration: none;"><li class="links link1 active">Home</li></a>
                 <a><li class="links link2">About</li></a>
                 <a><li class="links link3">Events</li></a>
                 <a><li class="links link4">Contact Us</li></a>
-                <a><li class="links link5">Join Us</li></a>
+                <a href="/join" style="color: #000000; text-decoration: none;"><li class="links link5">Join Us</li></a>
             </ul>
             <div class="nav-hamburger">
                 <div class="lines line1"></div>
@@ -36,22 +44,23 @@
             </div>
         </nav>
     </header>
-    <main class="ba">
-      <p class="ba" style="font-size:60px; font-family:Montserrat; color:#FFFFFF; text-align:center">
-<br><br><b>
-        Mathematics Association <br>
-        <line style="color:#C0C0DB; font-size:40px">
-        Birla Institute of Technology and Science, Pilani </b> </line>
+    <main class="background">
 
-        <br> <br><br>
-      </p>
-      
-    </main>
+        <p style="font-size:60px; font-family:Montserrat; color:#FFFFFF; text-align:center">
+          <br><br><b>
+              Mathematics Association <br>
+              <line style="color:#C0C0DB; font-size:40px">
+              Birla Institute of Technology and Science, Pilani </b> </line>
+
+              <br> <br><br></p>
+            </main>
     <footer>
         <div class="footer-content">
             <div class="footer-left">
                 <div class="footer-logo">
+                  <a href="https://www.bits-pilani.ac.in/Pilani/index.aspx">
                     <img src="{{url_for('static', filename='images/college-logo.png')}}" alt="Assoc Logo" class="footer-logo">
+                  </a>
                 </div>
                 <div class="footer-title-details">
                     <h3 class="footer-title">Mathematics Association, BITS Pilani</h3>
