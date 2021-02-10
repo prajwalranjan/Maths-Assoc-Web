@@ -1,0 +1,21 @@
+.events-headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #33335a;
+    color: white;
+}
+
+.events-heading{
+    font-style: italic;
+}
+
+.events-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(117, 181, 255);
+    padding: 4rem;
+    gap: 4rem;
+}

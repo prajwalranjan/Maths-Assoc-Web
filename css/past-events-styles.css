@@ -1,0 +1,59 @@
+body{
+    background-color: #33335a;
+}
+
+.events-headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    background-color: #33335a;
+    color: white;
+}
+
+
+.events-container{
+    overflow: hidden;
+    position: relative;
+    width: 70%;
+    margin: 0rem auto ;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    overflow: auto;
+    border: #ffffff 1rem solid;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 5px rgba(245, 233, 255, 0.2), 0 6px 20px 0 rgba(240, 227, 255, 0.19);
+}
+
+.events-slide{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+.event{
+    width: 100%;
+}
+
+.events-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.left-arrow, .right-arrow{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.left-arrow{
+    top: 50%;
+    left: 1rem;
+}
+
+.right-arrow{
+    top: 50%;
+    right: 1rem;
+}

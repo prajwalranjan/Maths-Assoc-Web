@@ -87,7 +87,7 @@ header{
 
 
 .nav-links .active{
-    border-bottom: 0.1rem black solid;
+    border-bottom: 0.2rem black solid;
     font-weight: 600;
 }
 
@@ -193,7 +193,7 @@ header{
 
 footer{
     background-color: #efefff;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     min-width: 100%;
     min-height: fit-content;
