@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/upcoming-events-styles.css">
+    <script src="../scripts/script.js" defer></script>
+    <title>Mathematics Association</title>-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/events-styles.css') }}" >   
+    <script src="../static/js/past-events.js" defer></script>
+    <link rel="icon" href="https://o.remove.bg/downloads/54a7dd76-cf06-48a9-8cdd-70a6516a5bc9/1592724687905-removebg-preview.png" type="image/icon type">
+    <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
+    <script src="../static/js/script.js" defer></script>
+    <title>Mathematics Association • BITS Pilani</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo-title">
+                <!--<img class="nav-logo" src="../images/assoc.png" alt="Assoc Logo">
+                <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>-->
+                <img class="nav-logo" src="../static/images/assoc.png" alt="Assoc Logo">
+                <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
+            </div>
+            <ul class="nav-links">
+                <li class="links link1"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
+                <li class="links link2"><a href="/about" style="color: #000000; text-decoration: none;">About</a></li>
+                <li class="links link3 active"><a href="/event" style="color: #000000; text-decoration: none;">Events</a></li>
+                <li class="links link4"><a href="/contact" style="color: #000000; text-decoration: none;">Contact Us</a></li>
+                <li class="links link5"><a href="/join" style="color: #000000; text-decoration: none;">Join Us</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <div class="lines line1"></div>
+                <div class="lines line2"></div>
+                <div class="lines line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="events-headings-u">
+            <h1 class="events-heading-u">Events</h1>
+            <h3 class="events-subheading-u">Upcoming Events</h3>
+        </div>
+        <div class="events-container-u">
+            <div class="event event1">
+                <!--<img src="../images/events.png">-->
+                <a href="/apogee">
+                <img src="../static/images/up1.png" height="270px" width="200px"></a>
+            </div>
+            <div class="event event2">
+              <!--<img src="../images/events.png">-->
+              <img src="../static/images/up2.png" height="270px" width="200px">
+            </div>
+            <div class="event event3">
+              <!--<img src="../images/events.png">-->
+              <img src="../static/images/up2.png" height="270px" width="200px">
+            </div>
+            <div class="event event4">
+              <img src="../static/images/up2.png" height="270px" width="200px">
+            </div>
+        </div>
+        <div class="events-headings-u">
+
+            <h3 class="events-subheading-u">Past Events</h3>
+        </div>
+        <div class="events-container-p">
+            <div class="events-slide-p">
+                <div class="event-p" id="last-clone">
+                    <img src="../static/images/bg4.jpg" alt="" class="image-p event4">
+                    <h1>Volleyball Match</h1>
+                </div>
+                <div class="event-p">
+                    <!--<img src="../images/bg3.jpg" alt="" class="image event1">-->
+                    <img src="../static/images/bg3.JPG" alt="" class="image-p event1">
+                    <h1><a href="/teachersday" style="color:black; text-decoration:none">Teachers' Day Celebration</a></h1>
+                </div>
+                <div class="event-p">
+                    <!--<img src="../images/bg2.jpg" alt="" class="image event2">-->
+                    <img src="../static/images/bg2.jpg" alt="" class="image-p event2">
+                    <h1><a href="/b4mo" style="color:black; text-decoration:none">B4MO</a></h1>
+                </div>
+                <div class="event-p">
+                    <!--<img src="../images/bg1.jpg" alt="" class="image event3">-->
+                    <img src="../static/images/bg1.jpg" alt="" class="image-p event3">
+                    <h1><a href="/amo" style="color:black; text-decoration:none">AMO</a></h1>
+                </div>
+                <div class="event-p">
+                    <!--<img src="../images/bg4.jpg" alt="" class="image event4">-->
+                    <img src="../static/images/bg4.jpg" alt="" class="image-p event4">
+                    <h1><a href="/volleyball" style="color:black; text-decoration:none">Volleyball Match</a></h1>
+                </div>
+                <div class="event-p">
+                    <!--<img src="../images/bg4.jpg" alt="" class="image event4">-->
+                    <img src="../static/images/bg5.jpg" alt="" class="image-p event4">
+                    <h1><a href="/symposium" style="color:black; text-decoration:none">Symposium</a></h1>
+                </div>
+                <div class="event-p" id="first-clone">
+                    <!--<img src="../images/bg3.jpg" alt="" class="image event1">-->
+                    <img src="../static/images/bg3.JPG" alt="" class="image-p event1">
+                    <h1><a href="/teachersday" style="color:black; text-decoration:none">Teachers' Day Celebration</a></h1>
+                </div>
+            </div>
+            <div class="left-arrow"></div>
+            <div class="right-arrow"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <!--<img src="../images/college.png" alt="Assoc Logo" class="footer-logo">-->
+                    <a href="https://www.bits-pilani.ac.in/Pilani/index.aspx">
+                      <img src="../static/images/college.png" alt="BITS Logo" class="footer-logo">
+                    </a>
+                </div>
+                <div class="footer-title-details">
+                    <h3 class="footer-title">Mathematics Association, BITS Pilani</h3>
+                    <h4 class="footer-sub-title">BITS Pilani</h4>
+                    <h4 class="footer-details">Jhunjhunu, Rajasthan-333031</h4>
+                </div>
+            </div>
+            <div class="footer-right">
+                    <div class="footer-social-links">
+                        <div class="social-link1">
+                            <!--<img src="../images/linkedin-logo.svg" alt="LinkedIn">-->
+                            <a href="https://in.linkedin.com/company/math-bitspilani">
+                            <img src="../static/images/linkedin-logo.svg" alt="LinkedIn"></a>
+                        </div>
+                        <div class="social-link2">
+                            <!--<img src="../images/insta-logo.svg" alt="Instagram">-->
+                            <a href="https://www.instagram.com/maths.assoc.bits.pilani/">
+                            <img src="../static/images/insta-logo.svg" alt="Instagram"></a>
+                        </div>
+                        <div class="social-link3">
+                            <!--<img src="../images/fb-logo.svg" alt="Facebook">-->
+                            <a href="https://www.facebook.com/maths.assoc.bits.pilani/">
+                            <img src="../static/images/fb-logo.svg" alt="Facebook"></a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <span class="material-icons">email</span>
+                        <address>maths.assoc@pilani.bits-pilani.ac.in</address>
+                    </div>
+                    <div class="mobile">
+                        <span class="material-icons">call</span>
+                        <address>+91 82905 08760</address>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    </body>
+    </html>

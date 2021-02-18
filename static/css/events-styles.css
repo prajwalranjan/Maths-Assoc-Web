@@ -1,0 +1,104 @@
+body{
+    /* background-color: #33335a; */
+    /* background: url(../images/rotunda.jpeg); */
+}
+
+.events-headings-p{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #2b2b31;
+    color: white;
+    font-size: 1.75rem;
+    text-shadow: 1.5px 1.5px 4px #bcc0ff;
+}
+
+
+.events-container-p{
+    /* overflow: hidden; */
+    position: relative;
+    width: 70%;
+    margin: 0rem auto ;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    border: #ffffff 0.5rem solid;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 5px rgba(245, 233, 255, 0.2), 0 6px 20px 0 rgba(240, 227, 255, 0.19);
+}
+
+.events-slide-p{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+
+.event-p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    max-height: 100%;
+}
+
+.event-p h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    background-color: white;
+    font-size: 2.75rem;
+    font-style: italic;
+    text-shadow: 1.5px 1.5px 4px #33335a;
+    white-space: nowrap;
+}
+
+.image-p{
+    width: 100%;
+    max-height: auto;
+}
+
+.events-container-p::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.left-arrow, .right-arrow{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.left-arrow{
+    top: 50%;
+    left: 1rem;
+}
+
+.right-arrow{
+    top: 50%;
+    right: 1rem;
+}
+.events-headings-u{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #33335a;
+    color: white;
+}
+
+.events-heading-u{
+    font-style: italic;
+}
+
+.events-container-u{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(117, 181, 255);
+    padding: 4rem;
+    gap: 4rem;
+}

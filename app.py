@@ -10,7 +10,35 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('Assoc_web_about.html')
+    return render_template('About.html')
+
+@app.route('/event')
+def event():
+    return render_template('events.html')
+
+@app.route('/apogee')
+def apogee():
+    return render_template('apogee.html')
+
+@app.route('/amo')
+def amo():
+    return render_template('amo.html')
+
+@app.route('/b4mo')
+def b4mo():
+    return render_template('b4mo.html')
+
+@app.route('/symposium')
+def symposium():
+    return render_template('symposium.html')
+
+@app.route('/teachersday')
+def teachersday():
+    return render_template('teachersday.html')
+
+@app.route('/volleyball')
+def volleyball():
+    return render_template('volleyball.html')
 
 @app.route('/contact')
 def contact():
