@@ -10,7 +10,35 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('Assoc_web_about.html')
+    return render_template('About.html')
+
+@app.route('/event')
+def event():
+    return render_template('events.html')
+
+@app.route('/apogee')
+def apogee():
+    return render_template('apogee.html')
+
+@app.route('/amo')
+def amo():
+    return render_template('amo.html')
+
+@app.route('/b4mo')
+def b4mo():
+    return render_template('b4mo.html')
+
+@app.route('/symposium')
+def symposium():
+    return render_template('symposium.html')
+
+@app.route('/teachersday')
+def teachersday():
+    return render_template('teachersday.html')
+
+@app.route('/volleyball')
+def volleyball():
+    return render_template('volleyball.html')
 
 @app.route('/contact')
 def contact():
@@ -20,27 +48,49 @@ def contact():
 def join(): 
     return render_template('Assoc_web_join.html')
 
+@app.route('/contact/contact-status',methods = ['POST', 'GET'])
+def contactstatus(): 
+    if request.method == 'POST':
+        formdetails =request.form
+        port = 465  # For SSL
+        smtp_server = "smtp.gmail.com"
+        sender_email = "mathsfirstperson@gmail.com"  # Enter your address
+        receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
+        password = "maths1234"
+        message = """\
+        Subject: Contact details Mathematics Association, BITS Pilani
+
+        Name : {name}
+        Mail : {mail}
+        Contact No : {no}
+        Message : {message}""".format(name=formdetails["name"],mail=formdetails["mail"],no=formdetails["mobile"],message=formdetails["message"])
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+            server.login(sender_email, password)
+            server.sendmail(sender_email, receiver_email, message)
+    return redirect(url_for("home"))
+
 @app.route('/join/join-status',methods = ['POST', 'GET'])
 def joinstatus(): 
-    # if request.method == 'POST':
-    #     formdetails =request.form
-    #     port = 465  # For SSL
-    #     smtp_server = "smtp.gmail.com"
-    #     sender_email = "mathsfirstperson@gmail.com"  # Enter your address
-    #     receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
-    #     password = "maths1234"
-    #     message = """\
-    #     Subject: Joining details Mathematics Association, BITS Pilani
+    if request.method == 'POST':
+        formdetails =request.form
+        port = 465  # For SSL
+        smtp_server = "smtp.gmail.com"
+        sender_email = "mathsfirstperson@gmail.com"  # Enter your address
+        receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
+        password = "maths1234"
+        message = """\
+        Subject: Joining details Mathematics Association, BITS Pilani
 
-    #     Name : {name}
-    #     BITS ID : {id}
-    #     Contact No : {no}
-    #     BITS Email : {mail}""".format(name=formdetails["Name"],id=formdetails["BITS ID"],no=formdetails["Contact Number"],mail=formdetails["BITS Email"])
-    #     context = ssl.create_default_context()
-    #     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-    #         server.login(sender_email, password)
-    #         server.sendmail(sender_email, receiver_email, message)
-    return render_template("Join-status.html")
+        Name : {name}
+        BITS ID : {id}
+        Contact No : {no}
+        BITS Email : {mail}""".format(name=formdetails["Name"],id=formdetails["BITS ID"],no=formdetails["Contact Number"],mail=formdetails["BITS Email"])
+        context = ssl.create_default_context()
+        with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+            server.login(sender_email, password)
+            server.sendmail(sender_email, receiver_email, message)
+    return redirect(url_for("home"))
         
         
 if __name__ =='__main__':
