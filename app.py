@@ -8,13 +8,13 @@ app.config['SECRET_KEY']= 'e4c1df590ecea9fd104c33bc39d52412'
 def home():
     return render_template('Assoc_web_home.html')
 
-@app.route('/about')
-def about():
-    return render_template('About.html')
+@app.route('/members')
+def members():
+    return render_template('web-members.html')
 
 @app.route('/event')
 def event():
-    return render_template('events.html')
+    return render_template('web-events.html')
 
 @app.route('/apogee')
 def apogee():
