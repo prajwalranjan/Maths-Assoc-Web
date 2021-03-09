@@ -34,3 +34,7 @@ slide.addEventListener("transitionend", ()=>{
         slide.style.transform = "translateX(" + (-size*counter) + "px";
     }
 });
+
+slide.addEventListener("wheel", (e)=>{
+    e.preventDefault();
+});

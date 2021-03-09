@@ -16,6 +16,12 @@ body{
     line-height: 1.6;
 }
 
+.index-main{
+    background: url(../images/college-bg.png) center;
+    height: 60vh;
+    min-width: 100vw;
+}
+
 h1, h2, h3, h4, p, ul{
     margin: 0;
     padding: 0;

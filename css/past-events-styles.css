@@ -30,6 +30,7 @@ body{
 .events-slide{
     width: 100%;
     height: 60vh;
+    min-height: fit-content;
     display: flex;
 }
 
