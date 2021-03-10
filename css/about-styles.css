@@ -1,6 +1,6 @@
 .description{
     text-align: center;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
     padding: 2rem 0 1rem 0;
 }
@@ -8,7 +8,6 @@
 .profile-heading{
     text-align: center;
     padding: 1rem;
-    /* background-color: yellow; */
 }
 
 .profile-container{
@@ -19,6 +18,7 @@
     align-items: center;
     flex-basis: 20vw;
     min-width: fit-content;
+    /* background-color: yellow; */
 }
 
 .prof-container{
@@ -39,7 +39,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-    ". atmesh atmesh devansh devansh bharat bharat ."
+    ". atmesh atmesh bharat bharat devansh devansh ."
     ". pranay pranay kshitij kshitij varun varun ."
     ". tanushri tanushri ujjwal ujjwal nishant nishant .";
 }
@@ -60,7 +60,6 @@
 
 .designation{
     color: #9234c7;
-    font-weight: 500;
 }
 
 .email{
@@ -75,9 +74,48 @@
     gap: 1rem;
 }
 
-.profile-link{
-    width: 2.25rem;
+.profile-links a img{
+    height: 1.5rem;
+    margin: 0.5rem 0 0 0;
 }
+
+@media screen and (max-width: 1000px){
+    .student-members{
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+        ". dipam dipam dipam  . rituj rituj rituj ."
+        "krupa krupa . sasank sasank . chirag chirag ."
+        "samarth samarth . prajwal prajwal . nandita nandita ."; 
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .junior-members{
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-areas: 
+        "atmesh atmesh . bharat bharat . devansh devansh ."
+        "pranay pranay . kshitij kshitij .  varun varun ."
+        "tanushri tanushri . ujjwal ujjwal  . nishant nishant .";
+    }
+}
+
+@media screen and (max-width: 790px){
+    .student-members{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .junior-members{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
 
 .dipam{
     grid-area: dipam;
