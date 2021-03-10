@@ -1,0 +1,148 @@
+.description{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+}
+
+.profile-heading{
+    text-align: center;
+    padding: 1rem;
+    /* background-color: yellow; */
+}
+
+.profile-container{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 20vw;
+    min-width: fit-content;
+}
+
+.prof-container{
+    margin: 1rem auto;
+    max-width: fit-content;
+}
+
+.student-members{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    ". . dipam dipam rituj rituj . ."
+    ". krupa krupa sasank sasank chirag chirag ."
+    ". samarth samarth prajwal prajwal nandita nandita .";
+}
+
+.junior-members{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas:
+    ". atmesh atmesh devansh devansh bharat bharat ."
+    ". pranay pranay kshitij kshitij varun varun ."
+    ". tanushri tanushri ujjwal ujjwal nishant nishant .";
+}
+
+
+.profile-img{
+    height: 12rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px 5px #2c2b2d33, 0 6px 20px 0 #ececec30;
+    margin: 0.75rem;
+}
+
+.name{
+    color: #31328F;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.designation{
+    color: #9234c7;
+    font-weight: 500;
+}
+
+.email{
+    white-space: nowrap;
+    font-size: 0.75rem;
+}
+
+.profile-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-link{
+    width: 2.25rem;
+}
+
+.dipam{
+    grid-area: dipam;
+}
+
+.rituj{
+    grid-area: rituj;
+}
+
+.krupa{
+    grid-area: krupa;
+}
+
+.sasank{
+    grid-area: sasank;
+}
+
+.chirag{
+    grid-area: chirag;
+}
+
+.samarth{
+    grid-area: samarth;
+}
+
+.prajwal{
+    grid-area: prajwal;
+}
+
+.nandita{
+    grid-area: nandita;
+}
+
+.atmesh{
+    grid-area: atmesh;
+}
+
+.devansh{
+    grid-area: devansh;
+}
+
+.bharat{
+    grid-area: bharat;
+}
+
+.pranay{
+    grid-area: pranay;
+}
+
+.kshitij{
+    grid-area: kshitij;
+}
+
+.varun{
+    grid-area: varun;
+}
+
+.tanushri{
+    grid-area: tanushri;
+}
+
+.ujjwal{
+    grid-area: ujjwal;
+}
+
+.nishant{
+    grid-area: nishant;
+}
