@@ -7,7 +7,10 @@
 
 .profile-heading{
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
+    font-variant: small-caps;
+    font-size: 1.75rem;
+    letter-spacing: 2.5px;
 }
 
 .profile-container{
@@ -18,7 +21,6 @@
     align-items: center;
     flex-basis: 20vw;
     min-width: fit-content;
-    /* background-color: yellow; */
 }
 
 .prof-container{
