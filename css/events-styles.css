@@ -24,12 +24,15 @@ body{
     padding: 4rem;
 }
 
+.upcoming-event{
+    margin: 1rem;
+}
+
 .upcoming-event img{
     width: 12em;
 }
 
 .events-container{
-    /* overflow: hidden; */
     position: relative;
     width: 70%;
     margin: 0rem auto ;
@@ -46,6 +49,42 @@ body{
     height: 65vh;
     min-height: fit-content;
     display: flex;
+}
+
+@media screen and (max-width: 1500px){
+    .events-slide{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .events-slide{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 1160px){
+    .events-slide{
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .events-slide{
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .events-slide{
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .events-slide{
+        height: 30vh;
+    }
 }
 
 .event{
@@ -69,6 +108,24 @@ body{
     text-shadow: 1.5px 1.5px 4px #33335a;
     white-space: nowrap;
     min-height: 15%;
+}
+
+@media screen and (max-width: 800px){
+    .event h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .event h1{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .event h1{
+        font-size: 1rem;
+    }
 }
 
 .image{
