@@ -22,8 +22,6 @@
 form{
     min-width: 40vw;
     padding: 1.5rem 0;
-    background-blend-mode:luminosity;
-    border-radius: 8px;
 }
 
 .join-form-container{
