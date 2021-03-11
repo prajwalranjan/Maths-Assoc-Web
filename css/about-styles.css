@@ -42,8 +42,8 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
     ". atmesh atmesh bharat bharat devansh devansh ."
-    ". pranay pranay kshitij kshitij varun varun ."
-    ". tanushri tanushri ujjwal ujjwal nishant nishant .";
+    ". pranay pranay kshitij kshitij tanushri tanushri ."
+    ". . ujjwal ujjwal nishant nishant . .";
 }
 
 
@@ -96,8 +96,8 @@
         grid-template-columns: repeat(9, 1fr);
         grid-template-areas: 
         "atmesh atmesh . bharat bharat . devansh devansh ."
-        "pranay pranay . kshitij kshitij .  varun varun ."
-        "tanushri tanushri . ujjwal ujjwal  . nishant nishant .";
+        "pranay pranay . kshitij kshitij . tanushri tanushri ."
+        ". ujjwal ujjwal ujjwal . nishant nishant nishant .";
     }
 }
 
@@ -169,10 +169,6 @@
 
 .kshitij{
     grid-area: kshitij;
-}
-
-.varun{
-    grid-area: varun;
 }
 
 .tanushri{
