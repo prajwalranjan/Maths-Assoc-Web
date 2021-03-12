@@ -85,7 +85,7 @@ def joinstatus():
         Name : {name}
         BITS ID : {id}
         Contact No : {no}
-        BITS Email : {mail}""".format(name=formdetails["Name"],id=formdetails["BITS ID"],no=formdetails["Contact Number"],mail=formdetails["BITS Email"])
+        BITS Email : {mail}""".format(name=formdetails["name"],id=formdetails["BITS ID"],no=formdetails["mobile"],mail=formdetails["mail"])
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
             server.login(sender_email, password)
