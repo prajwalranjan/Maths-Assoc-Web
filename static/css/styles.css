@@ -17,7 +17,7 @@ body{
 }
 
 .index-main{
-    background: url(../images/college-bg.png) center;
+    background: url('../images/college-bg.png') center;
     height: 60vh;
     min-width: 100vw;
 }
