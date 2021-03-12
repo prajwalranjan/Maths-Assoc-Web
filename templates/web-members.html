@@ -1,56 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-.background {
-  background: url('../static/images/members2.jpeg') no-repeat fixed;
-  border: 0px solid black;
-  background-size: cover;
-  height: 100%;
-}
-h1{
-  font-size:25pt;
-  text-align: center;
-}
-h2{
-  font-size:20pt;
-  color:#31328F;
-  text-align: center;
-}
-div.por{
-  font-size:15pt;
-  color:#8889BF;
-  text-align:center;
-}
-div.email{
-  font-size:10pt;
-  text-align:center;
-  font-style: italic;
-}
-.center {
-
-  margin-left: auto;
-  margin-right: auto;
-
-}
-td{
-  text-align: center;
-  align-items: center;
-}
-</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" >
-    <link rel="icon" href="https://o.remove.bg/downloads/54a7dd76-cf06-48a9-8cdd-70a6516a5bc9/1592724687905-removebg-preview.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/about-styles.css">
     <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
-    <script src="../static/js/script.js"></script>
-    <title>Mathematics Association • BITS Pilani</title>
+    <script src="../static/js/script.js" defer></script>
+    <script src="../static/js/past-events.js" defer></script>
+    <title>Mathematics Association</title>
 </head>
 <body>
     <header>
@@ -60,11 +21,11 @@ td{
                 <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
             </div>
             <ul class="nav-links">
-              <li class="links link1"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
-              <li class="links link2 active"><a href="/members" style="color: #000000; text-decoration: none;">Members</a></li>
-              <li class="links link3"><a href="/event" style="color: #000000; text-decoration: none;">Events</a></li>
-              <li class="links link4"><a href="/contact" style="color: #000000; text-decoration: none;">Contact Us</a></li>
-              <li class="links link5"><a href="/join" style="color: #000000; text-decoration: none;">Join Us</a></li>
+                <li class="links link1"><a href="/">Home</a></li>
+                <li class="links link2 active"><a href="/members">Members</a></li>
+                <li class="links link3"><a href="/event">Events</a></li>
+                <li class="links link4"><a href="/contact">Contact Us</a></li>
+                <li class="links link5"><a href="/join">Join Us</a></li>
             </ul>
             <div class="nav-hamburger">
                 <div class="lines line1"></div>
@@ -73,286 +34,194 @@ td{
             </div>
         </nav>
     </header>
-    <main class="background">
-
-        <p style="font-size:60px; font-family:Poppins; color:#efefff; text-align:center; text-shadow: 4px 4px #31328F">
-          <br><br><b>
-              Members</b>
-              <br>
-
-              <br> <br><br></p>
-            </main>
-            <br>
-            <p style="text-align: justify;  text-align-last:center;text-justify: inter-word; margin-left:150px; margin-right: 150px">
-              We are a group of enthusiastic students that help support the mathematical community on the campus. Throughout the year, we organize and host academic events, programs and social activities to help encourage collaboration, active participation and teamwork amongst the students. We are dedicated to making mathematics accessible and fun to all BITSian students, and to enhance the experience of undergraduate mathematics learning.
-            </p>
-            <br>
-            <hr color="#31328F" style="margin-left:100px; margin-right:100px">
-            <br><br>
-            <h1>Professor-in-charge</h1>
-            <p style="text-align:center">
-              <br>
-            <img src="../static/images/prof.png" alt="Sumanta Pasari" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-            <h2>Dr. Sumanta Pasari</h2>
-            <div class="por">Professor-in-charge</div>
-            <div class="email">sumanta.pasari@pilani.bits-pilani.ac.in</div>
-            <!--<table class="center" style="width:10%; margin-top:10pt">
-              <tr>
-                <td><img src="linkedin.png" style="height:30pt; width:30pt;"></td>
-                <td><img src="github.svg" style="height:30pt; width:30pt;"></td>
-              </tr>
-            </table>-->
-            <p style="text-align:center"><a href="https://universe.bits-pilani.ac.in/pilani/sumantapasari/profile"><img src="../static/images/web.png" style="height:30pt; width:30pt; margin-top: 5pt"></a></p>
-          </p>
-          <br>
-          <hr color="#31328F" style="margin-left:100px; margin-right:100px">
-          <br><br>
-          <h1>Student Members</h1>
-          <p style="text-align:center" style="text-align:center">
-            <br>
-            <table width="60%" style="text-align:center; margin-left:auto; margin-right:auto ">
-              <tr>
-                <td>
-                  <img src="../static/images/dipam.png" alt="Dipam Goswami" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Dipam Goswami</h2>
-                  <div class="por">President</div>
-                  <div class="email">f20170774@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <td><a href="http://linkedin.com/in/dipam-goswami-0a424416b/?originalSubdomain=in">
-                        <img src="../static/images/linkedin-logo.svg" style="height:30pt; width:30pt;"></a></td>
-                      <!--<td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/rituj.png" alt="Rituj Mittal" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Rituj Mittal</h2>
-                  <div class="por">Secretary</div>
-                  <div class="email">f20180915@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/rituj-mittal-b6b94a166">
-                        <img src="../static/images/linkedin-logo.svg" style="height:30pt; width:30pt;"></a></td>
-                      <!--<td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <table width="100%" style="text-align:center">
-              <tr>
-                <td>
-                  <img src="../static/images/krupa2.png" alt="Krupa Bhayani" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Krupa Bhayani</h2>
-                  <div class="por">APOGEE Co-ordinator</div>
-                  <div class="email">f20180844@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/krupa-bhayani/?originalSubdomain=in">
-                        <img src="../static/images/linkedin-logo.svg" style="height:30pt; width:30pt;"></a></td>
-                      <td><a href="https://github.com/Krupa0409">
-                        <img src="../static/images/github.svg" style="height:30pt; width:30pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/sasank.png" alt="Koganti Sasank" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Koganti Sasank</h2>
-                  <div class="por">Events Co-ordinator</div>
-                  <div class="email">f20181158@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <!--<td><img src="linkedin.png" style="height:30pt; width:30pt;"></td>
-                      <td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/chirag.png" alt="Chirag Jain" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Chirag Jain</h2>
-                  <div class="por">Technical Head</div>
-                  <div class="email">f20180828@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/chirag-jain-52b9ab1aa/">
-                        <img src="../static/images/linkedin-logo.svg" style="height:30pt; width:30pt;"></a></td>
-                      <!--<td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <table width="100%" style="text-align:top">
-              <tr>
-                <td>
-                  <img src="../static/images/samarth.png" alt="Samarth Joshi" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Samarth Joshi</h2>
-                  <div class="por">Design & Publicity Head</div>
-                  <div class="email">f20180873@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr><br><br>
-                      <!--<td><img src="linkedin.png" style="height:30pt; width:30pt;"></td>
-                      <td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/prajwal.png" alt="Prajwal Ranjan" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Prajwal Ranjan</h2>
-                  <div class="por">Editing Team Head</div>
-                  <div class="email">f20180414@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/prajwal-ranjan-64907715b/"><img src="../static/images/linkedin-logo.svg" style="height:30pt; width:30pt;"></a></td>
-                      <td><a href="https://github.com/prajwalranjan"><img src="../static/images/github.svg" style="height:30pt; width:30pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/nandita.png" alt="Nandita Kamath" style="height:200pt; width:200pt; border-radius: 12px;box-shadow: 10px 10px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2>Nandita Kamath</h2>
-                  <div class="por">Chief Editor</div>
-                  <div class="email">f20180868@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:10pt">
-                    <tr><br><br>
-                      <!--<td><img src="linkedin.png" style="height:30pt; width:30pt;"></td>
-                      <td><img src="github.svg" style="height:30pt; width:30pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </p>
-          <br>
-          <hr color="#31328F" style="margin-left:100px; margin-right:100px">
-          <br><br>
-          <h1>Junior Members</h1><br>
-          <p style="text-align:center" style="text-align:center">
-            <table width="100%" style="text-align:top">
-              <tr>
-                <td>
-                  <img src="../static/images/atmesh.png" alt="Atmesh Mahapatra" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Atmesh Mahapatra</h2>
-                  <div class="por" style="font-size:12pt">Joint Secretary</div>
-                  <div class="email" style="font-size:9pt">f20190560@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/atmesh-mahapatra-9372b0190"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <td><a href="https://github.com/atmeshvm"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/devansh.png" alt="Devansh Tanna" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Devansh Tanna</h2>
-                  <div class="por" style="font-size:12pt">Joint Technical Head</div>
-                  <div class="email" style="font-size:9pt">f20190158@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/devansh-tanna-0210/"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <td><a href="https://github.com/Devansh0210"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/bharat.png" alt="Bharat Agarwal" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Bharat Agarwal</h2>
-                  <div class="por" style="font-size:12pt">Joint Technical Head</div>
-                  <div class="email" style="font-size:9pt">f20190725@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <!--<td><img src="linkedin.png" style="height:20pt; width:20pt;"></td>-->
-                      <td><a href="https://github.com/BhrtAgrwl01"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/pranay.png" alt="Pranay Bansal" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt; margin-top:10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Pranay Bansal</h2>
-                  <div class="por" style="font-size:12pt; margin-top: 0">Joint APOGEE Co-ordinator</div>
-                  <div class="email" style="font-size:9pt">f20190471@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr><br>
-                      <!--<td><img src="linkedin.png" style="height:20pt; width:20pt;"></td>
-                      <td><img src="github.svg" style="height:20pt; width:20pt;"></td>--><br>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/kshitij.png" alt="Kshitij Gupta" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Kshitij Gupta</h2>
-                  <div class="por" style="font-size:12pt">Joint APOGEE Co-ordinator</div>
-                  <div class="email" style="font-size:9pt">f20190619@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/kshitij-gupta-612143196/"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <td><a href="https://github.com/chef627"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <table width="80%" style="text-align:top; margin-left:auto; margin-right:auto; margin-top:10pt ">
-              <tr>
-                <!-- <td>
-                  <img src="../static/images/varun.png" alt="Varun Kaushik" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt; margin-top:10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Varun Kaushik</h2>
-                  <div class="por" style="font-size:12pt">Joint Editing Head</div>
-                  <div class="email" style="font-size:9pt">f20190681@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr><br><br>
-                      <td><img src="linkedin.png" style="height:20pt; width:20pt;"></td>
-                      <td><img src="github.svg" style="height:20pt; width:20pt;"></td>
-                    </tr>
-                  </table>
-                </td> -->
-                <td>
-                  <img src="../static/images/tanushri.png" alt="Tanushri Tripathi" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Tanushri Tripathi</h2>
-                  <div class="por" style="font-size:12pt">Joint Editing Head</div>
-                  <div class="email" style="font-size:9pt">f20190617@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/tanushri-tripathi-9b13771b1/"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <td><a href="https://github.com/Tanushri101"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/ujjwal.png" alt="Ujjwal Jain" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Ujjwal Jain</h2>
-                  <div class="por" style="font-size:12pt">Joint Events Co-ordinator</div>
-                  <div class="email" style="font-size:9pt">f20190647@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="http://www.linkedin.com/in/ujjwal26jain"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <td><a href="https://github.com/Ujjwaljain2608"><img src="../static/images/github.svg" style="height:20pt; width:20pt;"></a></td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <img src="../static/images/nishant.png" alt="Nishant Sahu" style="height:100pt; width:100pt; border-radius: 12px;box-shadow: 7px 7px 5px grey; margin-bottom: 10pt" text-align="center"><br>
-                  <h2 style="font-size:15pt">Nishant Sahu</h2>
-                  <div class="por" style="font-size:12pt">Joint Events Co-ordinator</div>
-                  <div class="email" style="font-size:9pt">f20190895@pilani.bits-pilani.ac.in</div>
-                  <table class="center" style="width:10%; margin-top:5pt">
-                    <tr>
-                      <td><a href="https://www.linkedin.com/in/nishant-sahu-9807751ab"><img src="../static/images/linkedin-logo.svg" style="height:20pt; width:20pt;"></a></td>
-                      <!--<td><img src="github.svg" style="height:20pt; width:20pt;"></td>-->
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </p>
+    <main>
+        <section class="description">
+            <p>We are a group of enthusiastic students that help support the mathematical community on the campus. Throughout the year, we organize and host academic events, programs and social activities to help encourage collaboration, active participation and teamwork amongst the students. We are dedicated to making mathematics accessible and fun to all BITSian students, and to enhance the experience of undergraduate mathematics learning.</p>
+        </section>
+        <section class="prof">
+            <h2 class="profile-heading">Professor-In-Charge</h2>
+            <div class="profile-container prof-container">
+                <img src="../static/images/prof.png" alt="prof-img" class="profile-img prof-img">
+                <div class="name">Dr. Sumanta Pasari</div>
+                <div class="designation">Professor-In-Charge</div>
+                <address class="email">sumanta.pasari@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://universe.bits-pilani.ac.in/pilani/sumantapasari/profile"><img src="../static/images/web.png" alt="web"></a>
+                </div>
+            </div>
+        </section>
+        <h2 class="profile-heading">Student Members</h2>
+        <section class="student-members">
+            <div class="profile-container dipam">
+                <img src="../static/images/dipam.png" alt="dipam-profile-img" class="profile-img">
+                <div class="name">Dipam Goswami</div>
+                <div class="designation">President</div>
+                <address class="email">f20170774@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/dipam-goswami-0a424416b/?originalSubdomain=in"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <!-- <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container rituj">
+                <img src="../static/images/rituj.png" alt="rituj-profile-img" class="profile-img">
+                <div class="name">Rituj Mittal</div>
+                <div class="designation">Secretary</div>
+                <address class="email">f20180915@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/rituj-mittal-b6b94a166/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <!-- <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container krupa">
+                <img src="../static/images/krupa2.png" alt="krupa-profile-img" class="profile-img">
+                <div class="name">Krupa Bhayani</div>
+                <div class="designation">APOGEE Co-ordinator</div>
+                <address class="email">f20180844@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/krupa-bhayani/?originalSubdomain=in"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/Krupa0409"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container sasank">
+                <img src="../static/images/sasank.png" alt="sasank-profile-img" class="profile-img">
+                <div class="name">Koganti Sasank</div>
+                <div class="designation">Events Co-ordinator</div>
+                <address class="email">f20181158@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <!-- <a href="#"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container chirag">
+                <img src="../static/images/chirag.png" alt="chirag-profile-img" class="profile-img">
+                <div class="name">Chirag Jain</div>
+                <div class="designation">Technical Head</div>
+                <address class="email">f20180828@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/chirag-jain-52b9ab1aa/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <!-- <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container samarth">
+                <img src="../static/images/samarth.png" alt="samarth-profile-img" class="profile-img">
+                <div class="name">Samarth Joshi</div>
+                <div class="designation">Design & Publicity Head</div>
+                <address class="email">f20180873@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <!-- <a href="#"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container prajwal">
+                <img src="../static/images/prajwal.png" alt="prajwal-profile-img" class="profile-img">
+                <div class="name">Prajwal Ranjan</div>
+                <div class="designation">Editing Team Head</div>
+                <address class="email">f20180414@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/prajwal-ranjan-64907715b/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/prajwalranjan"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container nandita">
+                <img src="../static/images/nandita.png" alt="nandita-profile-img" class="profile-img">
+                <div class="name">Nandita Kamath</div>
+                <div class="designation">Cheif Editor</div>
+                <address class="email">f20180868@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <!-- <a href="#"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+        </section>
+        <h2 class="profile-heading atmesh">Junior Members</h2>
+        <section class="junior-members">
+            <div class="profile-container atmesh">
+                <img src="../static/images/atmesh.png" alt="atmesh-profile-img" class="profile-img">
+                <div class="name">Atmesh Mahapatra</div>
+                <div class="designation">Joint Secretary</div>
+                <address class="email">f20190560@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/atmesh-mahapatra-9372b0190/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/atmeshvm"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container bharat">
+                <img src="../static/images/bharat.png" alt="bharat-profile-img" class="profile-img">
+                <div class="name">Bharat Agarwal</div>
+                <div class="designation">Joint Technical Head</div>
+                <address class="email">f20190725@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <!-- <a href="#"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a> -->
+                    <a href="https://github.com/BhrtAgrwl01"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container devansh">
+                <img src="../static/images/devansh.png" alt="devansh-profile-img" class="profile-img">
+                <div class="name">Devansh Tanna</div>
+                <div class="designation">Joint Technical Head</div>
+                <address class="email">f20190158@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/devansh-tanna-0210/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/Devansh0210"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container pranay">
+                <img src="../static/images/pranay.png" alt="pranay-profile-img" class="profile-img">
+                <div class="name">Pranay Bansal</div>
+                <div class="designation">Joint APOGEE Co-ordinator</div>
+                <address class="email">f20190471@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <!-- <a href="#"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+            <div class="profile-container kshitij">
+                <img src="../static/images/kshitij.png" alt="kshitij-profile-img" class="profile-img">
+                <div class="name">Kshitij Gupta</div>
+                <div class="designation">Joint APOGEE Co-ordinator</div>
+                <address class="email">f20190619@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/kshitij-gupta-612143196/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/chef627"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container tanushri">
+                <img src="../static/images/tanushri.png" alt="tanushri-profile-img" class="profile-img">
+                <div class="name">Tanushri Tripathi</div>
+                <div class="designation">Joint Editing Head</div>
+                <address class="email">f20190617@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/tanushri-tripathi-9b13771b1/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/Tanushri101"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container ujjwal">
+                <img src="../static/images/ujjwal.png" alt="ujjwal-profile-img" class="profile-img">
+                <div class="name">Ujjwal Jain</div>
+                <div class="designation">Join Events Co-ordinator</div>
+                <address class="email">f20190647@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/ujjwal26jain/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <a href="https://github.com/Ujjwaljain2608"><img src="../static/images/github.svg" alt="github"></a>
+                </div>
+            </div>
+            <div class="profile-container nishant">
+                <img src="../static/images/nishant.png" alt="nishant-profile-img" class="profile-img">
+                <div class="name">Nishant Sahu</div>
+                <div class="designation">Joint Events Co-ordinator</div>
+                <address class="email">f20180868@pilani.bits-pilani.ac.in</address>
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/nishant-sahu-9807751ab/"><img src="../static/images/linkedin-logo.svg" alt="linkedin"></a>
+                    <!-- <a href="#"><img src="../static/images/github.svg" alt="github"></a> -->
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-content">
             <div class="footer-left">
                 <div class="footer-logo">
-                  <a href="https://www.bits-pilani.ac.in/Pilani/index.aspx">
-                    <img src="../static/images/college.png" alt="BITS Logo" class="footer-logo">
-                  </a>
+                    <img src="../static/images/assoc.png" alt="Assoc Logo" class="footer-logo">
                 </div>
                 <div class="footer-title-details">
                     <h3 class="footer-title">Mathematics Association, BITS Pilani</h3>
@@ -365,21 +234,17 @@ td{
                         <div class="social-link1">
                             <a href="https://in.linkedin.com/company/math-bitspilani">
                                 <img src="../static/images/linkedin-logo.svg" alt="LinkedIn">
-                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/254/254394.svg token=exp=1612281767~hmac=2e22b8b7dd2acba38e6beec921b9f13b" alt="LinkedIn"></a> -->
                             </a>
                         </div>
                         <div class="social-link2">
                             <a href="https://www.instagram.com/maths.assoc.bits.pilani/">
                                 <img src="../static/images/insta-logo.svg" alt="Instagram">
-                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1384/1384031.svg?token=exp=1612281884~hmac=db041a3f0359bd9d0d52ade01a872331" alt="Instagram"></a> -->
                             </a>
                         </div>
                         <div class="social-link3">
                             <a href="https://www.facebook.com/maths.assoc.bits.pilani/">
                                 <img src="../static/images/fb-logo.svg" alt="Facebook">
-                            <!-- <img src="https://www.flaticon.com/svg/vstatic/svg/1051/1051309.svg?token=exp=1612287457~hmac=e464000ef0ca6bc045b337e365f37c3c" alt="Facebook"></a> -->
                             </a>
-
                         </div>
                     </div>
                     <div class="contact">
@@ -392,6 +257,7 @@ td{
                     </div>
                 </div>
             </div>
+        </div>
     </footer>
-  </body>
+</body>
 </html>

@@ -6,11 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../static/css/styles.css">
-    <link rel="stylesheet" href="../static/css/events-styles.css">
+    <link rel="stylesheet" href="../static/css/join-styles.css">
     <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <script src="../static/js/script.js" defer></script>
-    <script src="../static/js/past-events.js" defer></script>
     <title>Mathematics Association</title>
 </head>
 <body>
@@ -23,9 +22,9 @@
             <ul class="nav-links">
                 <li class="links link1"><a href="/">Home</a></li>
                 <li class="links link2"><a href="/members">Members</a></li>
-                <li class="links link3 active"><a href="/event">Events</a></li>
+                <li class="links link3"><a href="/event">Events</a></li>
                 <li class="links link4"><a href="/contact">Contact Us</a></li>
-                <li class="links link5"><a href="/join">Join Us</a></li>
+                <li class="links link5 active"><a href="/join">Join Us</a></li>
             </ul>
             <div class="nav-hamburger">
                 <div class="lines line1"></div>
@@ -35,57 +34,34 @@
         </nav>
     </header>
     <main>
-        <div class="events-headings">
-            <h2 class="events-heading">Upcoming Events</h3>
-        </div>
-        <div class="upcoming-events-container">
-            <div class="upcoming-event upcoming-event1">
-                <img src="../static/images/up1.png">
-            </div>
-            <div class="upcoming-event upcoming-event2">
-                <img src="../static/images/up2.png">
-            </div>
-            <div class="upcoming-event upcoming-event3">
-                <img src="../static/images/up2.png">
-            </div>
-        </div>
-        <div class="events-headings">
-            <h2 class="events-heading">Past Events</h1>
-        </div>
-        <div class="events-container">
-            <div class="events-slide">
-                <div class="event" id="last-clone">
-                    <img src="../static/images/bg4.jpg" alt="" class="image event5">
-                    <h1>Volleyball Match</h1>
+        <section class="join-form">
+            <fform action="https://assoc-website.herokuapp.com/join/join-status" method="POST">
+                <div class="join-form-container">
+                    <div class="join-form-heading">Please fill out the following form </div> 
+            <div class="join-form-heading">if you are interested in joining </div>
+            <div class="join-form-heading heading3">Mathematics Association : </div>
+                    <div class="form form1">
+                        <label for="name">Name<span>&nbsp;*</span></label>
+                        <input type="text" name="name" class="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form form2">
+                        <label for="name">BITS ID<span>&nbsp;*</span></label>
+                        <input type="text" name="name" class="name" id="name" placeholder="BITS ID" required>
+                    </div>
+                    <div class="form form3">
+                        <label for="mobile">Contact Number<span>&nbsp;*</span></label>
+                        <input type="text" name="mobile" class="mobile" id="mobile" placeholder="Contact Number" required>
+                    </div>
+                    <div class="form form4">
+                        <label for="mail">BITS Email<span>&nbsp;*</span></label>
+                        <input type="email" name="mail" class="mail" id="mail" placeholder="BITS Email" required>
+                    </div>
                 </div>
-                <div class="event">
-                    <img src="../static/images/bg3.JPG" alt="" class="image event1">
-                    <h1>Teacher's Day Celebration</h1>
+                <div class="btn-container">
+                    <button type="submit" name="submit-contact" class="submit-contact" id="submit-contact">SUBMIT</button>
                 </div>
-                <div class="event">
-                    <img src="../static/images/bg2.jpg" alt="" class="image event2">
-                    <h1>B4MO</h1>
-                </div>
-                <div class="event">
-                    <img src="../static/images/bg1.jpg" alt="" class="image event3">
-                    <h1>AMO</h1>
-                </div>
-                <div class="event">
-                    <img src="../static/images/bg5.jpg" alt="" class="image event4">
-                    <h1>Symposium</h1>
-                </div>
-                <div class="event">
-                    <img src="../static/images/bg4.jpg" alt="" class="image event5">
-                    <h1>Volleyball Match</h1>
-                </div>
-                <div class="event" id="first-clone">
-                    <img src="../static/images/bg3.JPG" alt="" class="image event1">
-                    <h1>Teacher's Day Celebration</h1>
-                </div>
-            </div>
-            <div class="left-arrow"><</div>
-            <div class="right-arrow">></div>
-        </div>
+            </fform>
+        </section>
     </main>
     <footer>
         <div class="footer-content">

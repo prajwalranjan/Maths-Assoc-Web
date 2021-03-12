@@ -6,7 +6,7 @@ app.config['SECRET_KEY']= 'e4c1df590ecea9fd104c33bc39d52412'
 
 @app.route('/')
 def home():
-    return render_template('Assoc_web_home.html')
+    return render_template('web-home.html')
 
 @app.route('/members')
 def members():
@@ -42,11 +42,11 @@ def volleyball():
 
 @app.route('/contact')
 def contact():
-    return render_template('Assoc_web_contact.html')
+    return render_template('web-contactus.html')
 
 @app.route('/join')
 def join(): 
-    return render_template('Assoc_web_join.html')
+    return render_template('web-joinus.html')
 
 @app.route('/contact/contact-status',methods = ['POST', 'GET'])
 def contactstatus(): 
