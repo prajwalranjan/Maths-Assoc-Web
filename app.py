@@ -6,7 +6,7 @@ app.config['SECRET_KEY']= 'e4c1df590ecea9fd104c33bc39d52412'
 
 @app.route('/')
 def home():
-    return render_template('web-home.html')
+    return render_template('index.html')
 
 @app.route('/members')
 def members():
