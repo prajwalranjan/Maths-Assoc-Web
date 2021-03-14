@@ -1,5 +1,5 @@
-const slide = document.querySelector(".events-slide-p");
-const images = document.querySelectorAll(".event-p");
+const slide = document.querySelector(".events-slide");
+const images = document.querySelectorAll(".event");
 const left = document.querySelector(".left-arrow");
 const right = document.querySelector(".right-arrow");
 
@@ -33,4 +33,8 @@ slide.addEventListener("transitionend", ()=>{
         counter=images.length-counter;
         slide.style.transform = "translateX(" + (-size*counter) + "px";
     }
+});
+
+slide.addEventListener("wheel", (e)=>{
+    e.preventDefault();
 });

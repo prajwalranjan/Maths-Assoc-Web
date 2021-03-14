@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}" >
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/events-styles.css') }}" >
     <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/script.js" defer></script>
+    <script src="../static/js/past-events.js" defer></script>
     <title>Mathematics Association</title>
 </head>
 <body>
@@ -19,9 +21,9 @@
                 <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
             </div>
             <ul class="nav-links">
-                <li class="links link1 active"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
+                <li class="links link1"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
                 <li class="links link2"><a href="/members" style="color: #000000; text-decoration: none;">Members</a></li>
-                <li class="links link3"><a href="/event" style="color: #000000; text-decoration: none;">Events</a></li>
+                <li class="links link3 active"><a href="/event" style="color: #000000; text-decoration: none;">Events</a></li>
                 <li class="links link4"><a href="/contact" style="color: #000000; text-decoration: none;">Contact Us</a></li>
                 <li class="links link5"><a href="/join" style="color: #000000; text-decoration: none;">Join Us</a></li>
             </ul>
@@ -32,7 +34,58 @@
             </div>
         </nav>
     </header>
-    <main class="index-main">
+    <main>
+        <div class="events-headings">
+            <h2 class="events-heading">Upcoming Events</h3>
+        </div>
+        <div class="upcoming-events-container">
+            <div class="upcoming-event upcoming-event1">
+                <img src="../static/images/up1.png">
+            </div>
+            <div class="upcoming-event upcoming-event2">
+                <img src="../static/images/up2.png">
+            </div>
+            <div class="upcoming-event upcoming-event3">
+                <img src="../static/images/up2.png">
+            </div>
+        </div>
+        <div class="events-headings">
+            <h2 class="events-heading">Past Events</h1>
+        </div>
+        <div class="events-container">
+            <div class="events-slide">
+                <div class="event" id="last-clone">
+                    <img src="../static/images/bg4.jpg" alt="" class="image event5">
+                    <h1>Volleyball Match</h1>
+                </div>
+                <div class="event">
+                    <img src="../static/images/bg3.JPG" alt="" class="image event1">
+                    <h1>Teacher's Day Celebration</h1>
+                </div>
+                <div class="event">
+                    <img src="../static/images/bg2.jpg" alt="" class="image event2">
+                    <h1>B4MO</h1>
+                </div>
+                <div class="event">
+                    <img src="../static/images/bg1.jpg" alt="" class="image event3">
+                    <h1>AMO</h1>
+                </div>
+                <div class="event">
+                    <img src="../static/images/bg5.jpg" alt="" class="image event4">
+                    <h1>Symposium</h1>
+                </div>
+                <div class="event">
+                    <img src="../static/images/bg4.jpg" alt="" class="image event5">
+                    <h1>Volleyball Match</h1>
+                </div>
+                <div class="event" id="first-clone">
+                    <img src="../static/images/bg3.JPG" alt="" class="image event1">
+                    <h1>Teacher's Day Celebration</h1>
+                </div>
+            </div>
+            <div class="left-arrow"><</div>
+            <div class="right-arrow">></div>
+        </div>
     </main>
     <footer>
         <div class="footer-content">

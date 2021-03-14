@@ -96,9 +96,7 @@ form{
 
 .form label{
     text-transform: uppercase;
-
     color: rgb(49, 49, 49);
-    /* color: rgb(0, 0, 0); */
 }
 
 label span{

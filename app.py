@@ -6,15 +6,15 @@ app.config['SECRET_KEY']= 'e4c1df590ecea9fd104c33bc39d52412'
 
 @app.route('/')
 def home():
-    return render_template('Assoc_web_home.html')
+    return render_template('index.html')
 
-@app.route('/about')
-def about():
-    return render_template('About.html')
+@app.route('/members')
+def members():
+    return render_template('web-members.html')
 
 @app.route('/event')
 def event():
-    return render_template('events.html')
+    return render_template('web-events.html')
 
 @app.route('/apogee')
 def apogee():
@@ -42,11 +42,11 @@ def volleyball():
 
 @app.route('/contact')
 def contact():
-    return render_template('Assoc_web_contact.html')
+    return render_template('web-contactus.html')
 
 @app.route('/join')
 def join(): 
-    return render_template('Assoc_web_join.html')
+    return render_template('web-joinus.html')
 
 @app.route('/contact/contact-status',methods = ['POST', 'GET'])
 def contactstatus(): 
@@ -85,7 +85,7 @@ def joinstatus():
         Name : {name}
         BITS ID : {id}
         Contact No : {no}
-        BITS Email : {mail}""".format(name=formdetails["Name"],id=formdetails["BITS ID"],no=formdetails["Contact Number"],mail=formdetails["BITS Email"])
+        BITS Email : {mail}""".format(name=formdetails["name"],id=formdetails["BITS ID"],no=formdetails["mobile"],mail=formdetails["mail"])
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
             server.login(sender_email, password)

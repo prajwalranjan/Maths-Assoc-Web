@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="stylesheet" href="../static/css/join-styles.css">
     <link rel="shortcut icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
     <link rel="icon" href="../static/images/assoc-favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../static/css/styles.css">
     <script src="../static/js/script.js" defer></script>
     <title>Mathematics Association</title>
 </head>
@@ -19,11 +20,11 @@
                 <h1 class="nav-title">Mathematics Association, BITS Pilani</h1>
             </div>
             <ul class="nav-links">
-                <li class="links link1 active"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
+                <li class="links link1"><a href="/" style="color: #000000; text-decoration: none;">Home</a></li>
                 <li class="links link2"><a href="/members" style="color: #000000; text-decoration: none;">Members</a></li>
                 <li class="links link3"><a href="/event" style="color: #000000; text-decoration: none;">Events</a></li>
                 <li class="links link4"><a href="/contact" style="color: #000000; text-decoration: none;">Contact Us</a></li>
-                <li class="links link5"><a href="/join" style="color: #000000; text-decoration: none;">Join Us</a></li>
+                <li class="links link5 active"><a href="/join" style="color: #000000; text-decoration: none;">Join Us</a></li>
             </ul>
             <div class="nav-hamburger">
                 <div class="lines line1"></div>
@@ -32,7 +33,35 @@
             </div>
         </nav>
     </header>
-    <main class="index-main">
+    <main>
+        <section class="join-form">
+            <form action="https://assoc-website.herokuapp.com/join/join-status" method="POST">
+                <div class="join-form-container">
+                    <div class="join-form-heading">Please fill out the following form </div> 
+            <div class="join-form-heading">if you are interested in joining </div>
+            <div class="join-form-heading heading3">Mathematics Association : </div>
+                    <div class="form form1">
+                        <label for="name">Name<span>&nbsp;*</span></label>
+                        <input type="text" name="name" class="name" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="form form2">
+                        <label for="BITS ID">BITS ID<span>&nbsp;*</span></label>
+                        <input type="text" name="BITS ID" class="BITS ID" id="BITS ID" placeholder="BITS ID" required>
+                    </div>
+                    <div class="form form3">
+                        <label for="mobile">Contact Number<span>&nbsp;*</span></label>
+                        <input type="text" name="mobile" class="mobile" id="mobile" placeholder="Contact Number" required>
+                    </div>
+                    <div class="form form4">
+                        <label for="mail">BITS Email<span>&nbsp;*</span></label>
+                        <input type="email" name="mail" class="mail" id="mail" placeholder="BITS Email" required>
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" name="submit-contact" class="submit-contact" id="submit-contact">SUBMIT</button>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
