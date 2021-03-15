@@ -2,6 +2,7 @@ const slide = document.querySelector(".events-slide");
 const images = document.querySelectorAll(".event");
 const left = document.querySelector(".left-arrow");
 const right = document.querySelector(".right-arrow");
+const bubbles = document.querySelectorAll(".bubble");
 
 let counter = 1;
 const size = images[0].clientWidth;
@@ -37,4 +38,17 @@ slide.addEventListener("transitionend", ()=>{
 
 slide.addEventListener("wheel", (e)=>{
     e.preventDefault();
+});
+
+bubbles.forEach((bubble, index)=>{
+    bubble.addEventListener("click", ()=>{
+        bubbles.forEach((bbl)=>{
+            if(bbl.classList.contains("active-bubble")){
+                bbl.classList.remove("active-bubble");
+            }
+        });
+        bubble.classList.add("active-bubble");
+        slide.style.transition = "transform 0.5s ease-out";
+        slide.style.transform = "translateX(" + (-size*(index+1)) + "px";
+    });
 });
