@@ -59,7 +59,6 @@ header{
     font-size: 1rem;
     font-weight: 650;
     text-shadow: 1.5px 1.5px 4px #bcc0ff;
-    font-variant: small-caps;
     transition: font-size 400ms ease-in-out;
 }
 
