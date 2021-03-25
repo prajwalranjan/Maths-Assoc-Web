@@ -1,8 +1,5 @@
-const submitButton = document.querySelector(".button");
+const join =  document.querySelector("#joinus-form");
 
-function congratulations(e){
-	alert("Your response has been submitted");
-}
-
-
-submitButton.addEventListener("click", congratulations);
+join.addEventListener("submit", ()=>{
+    alert("Form is submitted");
+});

@@ -14,13 +14,56 @@ body{
     font-family: 'Poppins', sans-serif;
     color: black;
     line-height: 1.6;
+    background-color: #efefff;
+    overflow:visible;
 }
 
 .index-main{
     background: url(../images/college-bg.png) center;
-    height: 60vh;
+    min-height: fit-content;
+    height: 50vh;
     min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+.index-heading{
+    min-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index-subheading{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 1260px){
+    .index-heading{
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .index-subheading{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .index-main{
+        white-space: nowrap;
+    }
+    .index-heading{
+        font-size: 0.8em;
+    }
+}
+
+
 
 h1, h2, h3, h4, p, ul{
     margin: 0;
@@ -200,8 +243,6 @@ header{
 
 footer{
     background-color: #efefff;
-    /* position: fixed; */
-    bottom: 0;
     min-width: 100%;
     min-height: fit-content;
 }
