@@ -88,7 +88,7 @@ def contactstatus():
 def joinstatus():
     if request.method == 'POST':
         formdetails = request.form
-        port = 587  # For SSL
+        port = 465  # For SSL
         smtp_server = "smtp.gmail.com"
         sender_email = "mathsfirstperson@gmail.com"  # Enter your address
         receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
