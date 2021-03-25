@@ -77,7 +77,7 @@ def joinstatus():
         port = 465  # For SSL
         smtp_server = "smtp.gmail.com"
         sender_email = "mathsfirstperson@gmail.com"  # Enter your address
-        receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
+        receiver_email = "maths.assoc@pilani.bits-pilani.ac.in"  # Enter receiver address
         password = "maths1234"
         message = """\
         Subject: Joining details Mathematics Association, BITS Pilani
