@@ -15,13 +15,14 @@ body{
     color: black;
     line-height: 1.6;
     background-color: #efefff;
-    overflow:visible;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 .index-main{
     background: url(../images/college-bg.png) center;
     min-height: fit-content;
-    height: 50vh;
     min-width: 100vw;
     display: flex;
     justify-content: center;
