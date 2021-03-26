@@ -99,7 +99,7 @@ def joinstatus():
         formdetails = request.form
 
         msg = Message('Joining details Mathematics Association, BITS Pilani',
-                      sender='mathsfirstperson@gmail.com', recipients=['mathssecondperson@gmail.com'])
+                      sender='mathsfirstperson@gmail.com', recipients=['f20190647@pilani.bits-pilani.ac.in'])
         msg.body = """\
         Name : {name}
         BITS ID : {id}
