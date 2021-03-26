@@ -10,7 +10,13 @@
 
 .join-form-heading{
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+}
+
+@media screen and (max-width: 750px){
+    .join-form-heading{
+        font-size: 0.95rem;
+    }
 }
 
 .heading3{
@@ -18,10 +24,43 @@
 }
 
 form{
-    min-width: 40vw;
+    min-width: 45%;
     padding: 1.5rem 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     border-radius: 2rem;
+}
+
+@media screen and (max-width: 1200px){
+    form{
+        min-width: 55%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    form{
+        min-width: 60%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    form{
+        min-width: 65%;
+        border-radius: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 550px){
+    form{
+        min-width: 70%;
+        border-radius: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    form{
+        min-width: 75%;
+        border-radius: 1.25rem;
+    }
 }
 
 .join-form-container{
