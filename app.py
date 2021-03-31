@@ -97,6 +97,7 @@ def contactstatus():
         except Exception as e:
             print(e)
 
+        # # using python mailing
         # port = 465  # For SSL
         # smtp_server = "smtp.gmail.com"
         # sender_email = "mathsfirstperson@gmail.com"  # Enter your address
@@ -124,7 +125,7 @@ def joinstatus():
         message = Mail(
             from_email='mathsfirstperson@gmail.com',
             to_emails='maths.assoc@pilani.bits-pilani.ac.in',
-            subject='Joining Details, MABP Website',
+            subject='Maths-Assoc Recruitment, MABP Website',
             plain_text_content="""\
                 Name : {name}
                 BITS ID : {id}
@@ -142,6 +143,7 @@ def joinstatus():
 
     return redirect(url_for("home"))
 
+    # # Using Flask Mail
     # msg = Message('Joining details Mathematics Association, BITS Pilani',
     #               sender='mathsfirstperson@gmail.com', recipients=['mathssecondperson@gmail.com'])
     # msg.body = """\
@@ -152,12 +154,13 @@ def joinstatus():
     # mail.send(msg)
     # return redirect(url_for("home"))
 
+    # # Using python mailing
     #     port = 465  # For SSL
     #     smtp_server = "smtp.gmail.com"
     #     sender_email = "mathsfirstperson@gmail.com"  # Enter your address
     #     receiver_email = "mathssecondperson@gmail.com"  # Enter receiver address
     #     password = "maths1234"
-    # #     message = """\
+    #     message = """\
     #     Subject: Joining details Mathematics Association, BITS Pilani
 
     #     Name : {name}
