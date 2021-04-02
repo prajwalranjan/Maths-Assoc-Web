@@ -8,13 +8,7 @@ from sendgrid.helpers.mail import Mail
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'e4c1df590ecea9fd104c33bc39d52412'
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'mathsfirstperson@gmail.com'
-app.config['MAIL_PASSWORD'] = 'maths1234'
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+app.config.from_object('config.Config')
 mail = Mail(app)
 
 
@@ -80,6 +74,7 @@ def contactstatus():
 
         message = Mail(
             from_email='mathsfirstperson@gmail.com',
+            # to_emails='mathssecondperson@gmail.com',
             to_emails='maths.assoc@pilani.bits-pilani.ac.in',
             subject='Contact Details, MABP Website',
             plain_text_content="""\
@@ -124,6 +119,7 @@ def joinstatus():
 
         message = Mail(
             from_email='mathsfirstperson@gmail.com',
+            # to_emails='mathssecondperson@gmail.com',
             to_emails='maths.assoc@pilani.bits-pilani.ac.in',
             subject='Maths-Assoc Recruitment, MABP Website',
             plain_text_content="""\
@@ -133,7 +129,7 @@ def joinstatus():
                 BITS Email : {mail}""".format(name=formdetails["name"], id=formdetails["BITS ID"], no=formdetails["mobile"], mail=formdetails["mail"]))
         try:
             sg = SendGridAPIClient(
-                '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')
+                app.config["SENDGRID_API_KEY"])
             response = sg.send(message)
             print(response.status_code)
             print(response.body)
