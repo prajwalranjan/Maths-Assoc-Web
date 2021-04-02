@@ -5,10 +5,11 @@ from flask_mail import Mail, Message
 import os
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
+from dotenv import load_dotenv
 
-
+load_dotenv()
 app = Flask(__name__)
-app.config.from_object('config.Config')
+app.config['SECRET_KEY'] = os.getenv("SECRET_KEY")
 mail = Mail(app)
 
 
@@ -84,7 +85,7 @@ def contactstatus():
                 Message : {message}""".format(name=formdetails["name"], mail=formdetails["mail"], no=formdetails["mobile"], message=formdetails["message"]))
         try:
             sg = SendGridAPIClient(
-                app.config["SENDGRID_API_KEY"])
+                os.getenv("SENDGRID_API_KEY"))
             response = sg.send(message)
             print(response.status_code)
             print(response.body)
@@ -129,7 +130,7 @@ def joinstatus():
                 BITS Email : {mail}""".format(name=formdetails["name"], id=formdetails["BITS ID"], no=formdetails["mobile"], mail=formdetails["mail"]))
         try:
             sg = SendGridAPIClient(
-                app.config["SENDGRID_API_KEY"])
+                os.getenv("SENDGRID_API_KEY"))
             response = sg.send(message)
             print(response.status_code)
             print(response.body)

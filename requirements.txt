@@ -9,3 +9,4 @@ Werkzeug==1.0.1
 WTForms==2.3.3
 gunicorn 
 sendgrid==6.6.0
+python-dotenv==0.16.0
