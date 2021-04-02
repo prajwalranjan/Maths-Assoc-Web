@@ -84,8 +84,8 @@ def contactstatus():
                 Message : {message}""".format(name=formdetails["name"], mail=formdetails["mail"], no=formdetails["mobile"], message=formdetails["message"]))
         try:
             sg = SendGridAPIClient(
-                app.config["SENDGRID_API_KEY"]))
-            response=sg.send(message)
+                app.config["SENDGRID_API_KEY"])
+            response = sg.send(message)
             print(response.status_code)
             print(response.body)
             print(response.headers)
@@ -112,25 +112,25 @@ def contactstatus():
     return redirect(url_for("home"))
 
 
-@ app.route('/join/join-status', methods = ['POST', 'GET'])
+@ app.route('/join/join-status', methods=['POST', 'GET'])
 def joinstatus():
     if request.method == 'POST':
-        formdetails=request.form
+        formdetails = request.form
 
-        message=Mail(
-            from_email = 'mathsfirstperson@gmail.com',
+        message = Mail(
+            from_email='mathsfirstperson@gmail.com',
             # to_emails='mathssecondperson@gmail.com',
-            to_emails = 'maths.assoc@pilani.bits-pilani.ac.in',
-            subject = 'Maths-Assoc Recruitment, MABP Website',
-            plain_text_content = """\
+            to_emails='maths.assoc@pilani.bits-pilani.ac.in',
+            subject='Maths-Assoc Recruitment, MABP Website',
+            plain_text_content="""\
                 Name : {name}
                 BITS ID : {id}
                 Contact No : {no}
                 BITS Email : {mail}""".format(name=formdetails["name"], id=formdetails["BITS ID"], no=formdetails["mobile"], mail=formdetails["mail"]))
         try:
-            sg=SendGridAPIClient(
+            sg = SendGridAPIClient(
                 app.config["SENDGRID_API_KEY"])
-            response=sg.send(message)
+            response = sg.send(message)
             print(response.status_code)
             print(response.body)
             print(response.headers)
@@ -171,4 +171,4 @@ def joinstatus():
 
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug=True)
