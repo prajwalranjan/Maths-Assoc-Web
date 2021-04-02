@@ -115,7 +115,6 @@ def contactstatus():
 @ app.route('/join/join-status', methods = ['POST', 'GET'])
 def joinstatus():
     if request.method == 'POST':
-<<<<<<< HEAD
         formdetails=request.form
 
         message=Mail(
@@ -124,30 +123,14 @@ def joinstatus():
             to_emails = 'maths.assoc@pilani.bits-pilani.ac.in',
             subject = 'Maths-Assoc Recruitment, MABP Website',
             plain_text_content = """\
-=======
-        formdetails = request.form
-
-        message = Mail(
-            from_email='mathsfirstperson@gmail.com',
-            # to_emails='mathssecondperson@gmail.com',
-            to_emails='maths.assoc@pilani.bits-pilani.ac.in',
-            subject='Maths-Assoc Recruitment, MABP Website',
-            plain_text_content="""\
->>>>>>> 48d157b433c0309dc6078f2f75250ab4637b84d1
                 Name : {name}
                 BITS ID : {id}
                 Contact No : {no}
                 BITS Email : {mail}""".format(name=formdetails["name"], id=formdetails["BITS ID"], no=formdetails["mobile"], mail=formdetails["mail"]))
         try:
-<<<<<<< HEAD
             sg=SendGridAPIClient(
                 app.config["SENDGRID_API_KEY"])
             response=sg.send(message)
-=======
-            sg = SendGridAPIClient(
-                app.config["SENDGRID_API_KEY"])
-            response = sg.send(message)
->>>>>>> 48d157b433c0309dc6078f2f75250ab4637b84d1
             print(response.status_code)
             print(response.body)
             print(response.headers)
