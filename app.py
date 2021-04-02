@@ -122,7 +122,7 @@ def joinstatus():
             from_email='mathsfirstperson@gmail.com',
             # to_emails='mathssecondperson@gmail.com',
             to_emails='maths.assoc@pilani.bits-pilani.ac.in',
-            subject='Maths-Assoc Recruitment, MABP Website',
+            subject='Regarding Maths Assoc Recruitment - Sem 2 20/21',
             plain_text_content="""\
                 Name : {name}
                 BITS ID : {id}
