@@ -42,7 +42,7 @@
     grid-template-areas:
     ". atmesh atmesh bharat bharat devansh devansh ."
     ". pranay pranay kshitij kshitij tanushri tanushri ."
-    ". varun varun ujjwal ujjwal nishant nishant .";
+    ". . ujjwal ujjwal nishant nishant . .";
 }
 
 
@@ -96,7 +96,7 @@
         grid-template-areas: 
         "atmesh atmesh . bharat bharat . devansh devansh ."
         "pranay pranay . kshitij kshitij . tanushri tanushri ."
-        "varun varun . ujjwal ujjwal . nishant nishant .";
+        ". ujjwal ujjwal ujjwal . nishant nishant nishant .";
     }
 }
 
