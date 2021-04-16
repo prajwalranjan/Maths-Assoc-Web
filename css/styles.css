@@ -24,6 +24,7 @@ body{
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
 }
+
 .index-main{
     background: url(../images/college-bg.png) center;
     min-height: fit-content;
